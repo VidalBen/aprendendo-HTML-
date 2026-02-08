@@ -8,6 +8,8 @@ apertar enter completa o codigo
 
 antes de colocar qual que coisa tem que colocar < > terminar com </  >
 
+ctrl + S = save
+
 
 
 
