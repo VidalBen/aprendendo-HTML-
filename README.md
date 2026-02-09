@@ -10,6 +10,14 @@ antes de colocar qual que coisa tem que colocar < > terminar com </  >
 
 ctrl + S = save
 
+  {} = codigo
 
+  font = o estilo de fonte
+
+| codigo | e o que faz |
+| ----------- | ----------- |
+| font family | estilo de fonte |
+| font size| tamanho da fonte |
+| font color | cor da fonte
 
 
