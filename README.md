@@ -18,6 +18,6 @@ ctrl + S = save
 | ----------- | ----------- |
 | font family | estilo de fonte |
 | font size| tamanho da fonte |
-| font color | cor da fonte
+|  color | cor da fonte
 
 
