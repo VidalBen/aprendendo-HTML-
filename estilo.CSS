@@ -9,7 +9,8 @@ header {
     background: linear-gradient(to bottom, rgb(101, 1, 129), rgb(72, 1, 92), rgb(56, 0, 68));
     color: cornsilk;
     display: block;
-    text-align: center;
+    text-align: left;
+    padding: 1%;
 }
 
 h1 {
