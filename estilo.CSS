@@ -39,7 +39,7 @@ img {
 }
 
 footer {
-    background: linear-gradient(to top, rgb(101, 1, 129), rgb(72, 1, 92), rgb(56, 0, 68));
+    background: linear-gradient(to bottom, rgb(101, 1, 129), rgb(72, 1, 92), rgb(56, 0, 68));
     color: rgb(220, 230, 31);
     display: block;
     text-align: center;
