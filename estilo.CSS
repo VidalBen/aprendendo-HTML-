@@ -9,7 +9,6 @@ header {
     background: linear-gradient(to bottom, rgb(101, 1, 129), rgb(72, 1, 92), rgb(56, 0, 68));
     color: white;
     padding: 20px;
-    position: fixed;
     top: 0;      /* GRUDA NO TOPO */
     left: 0;     /* GRUDA NA ESQUERDA */
     width: 100%; /* OCUPA A LARGURA TODA */
