@@ -12,6 +12,11 @@ header {
     top: 0;      /* GRUDA NO TOPO */
     left: 0;     /* GRUDA NA ESQUERDA */
     width: 100%; /* OCUPA A LARGURA TODA */
+
+    /*ver se funciona*/
+    display: flex;
+    justify-content: flex-end; /* joga para a direita */
+    gap: 10px;
 }
 
 
@@ -111,21 +116,17 @@ main {
      
             /* cima , direita ,baixo , esquerda */   
     padding: 8px,20px,8px,20px;
-    display: flex;
-    justify-content: flex-end; /* joga para a direita */
-    gap: 10px;
-    background-color: cornflowerblue;
     color: cornsilk;
     border-radius: 10px;
     font-size: 1.3em;
     font-weight: bold;
     transition: 0.4 ease;
     
+    
 }
 
 button:hover{
 
-     background-color: cornflowerblue;
      color: yellow;
 
 
