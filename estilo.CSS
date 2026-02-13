@@ -2,35 +2,36 @@
 
 body {
     background-color: rgb(26, 1, 33);
-    color: cornsilk;
+    color: var(--branco-para-o-texto-basico)
 }
 
 header {
     background: linear-gradient(to bottom, rgb(101, 1, 129), rgb(72, 1, 92), rgb(56, 0, 68));
-    color: cornsilk;
+    color: var(--branco-para-o-texto-basico);
     display: block;
     text-align: left;
     padding: 1%;
+    border-radius: 20px;
 }
 
 
-h1 {
+/*h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
     color: rgb(220, 230, 31);
-}
+}*/
 
 h2 {
     margin:0%;
     border: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(240, 127, 70);
+    color: var(--laranja-texto)
 }
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(240, 127, 70);
+    color: var(--laranja-texto)
 }
 
 img {
@@ -43,6 +44,7 @@ footer {
     color: rgb(220, 230, 31);
     display: block;
     text-align: center;
+    border-radius: 20px;
 }
 
 div {
@@ -53,6 +55,7 @@ div {
     width: 96%;
     padding: 2%;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
 }
 
 main {
@@ -65,13 +68,21 @@ main {
     padding: 2%;
     font-family: Arial, Helvetica, sans-serif;
     color: deepskyblue;
+    border-radius: 20px;
 }
- nav {
+ /*nav {
 
     size: 24px;
       
 
 
 
+
+ }*/
+
+ :root{
+
+      --branco-para-o-texto-basico: cornsilk;
+      --laranja-texto:rgb(240, 127, 70);
 
  }
