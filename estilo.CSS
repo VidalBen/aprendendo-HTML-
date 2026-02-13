@@ -13,10 +13,7 @@ header {
     left: 0;     /* GRUDA NA ESQUERDA */
     width: 100%; /* OCUPA A LARGURA TODA */
 
-    /*ver se funciona*/
-    display: flex;
-    justify-content: flex-end; /* joga para a direita */
-    gap: 10px;
+    
 }
 
 
@@ -121,6 +118,10 @@ main {
     font-size: 1.3em;
     font-weight: bold;
     transition: 0.4 ease;
+    /*ver se funciona*/
+    display: flex;
+    justify-content: flex-end; /* joga para a direita */
+    gap: 10px;
     
     
 }
