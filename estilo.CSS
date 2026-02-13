@@ -11,7 +11,6 @@ header {
     display: block;
     text-align: left;
     padding: 1%;
-    border-radius: 20px;
 }
 
 
@@ -45,6 +44,8 @@ footer {
     display: block;
     text-align: center;
     border-radius: 20px;
+    width: 90%;
+    padding: 5%;
 }
 
 div {
@@ -52,8 +53,8 @@ div {
     display: block;
     margin: 0 auto;
     text-align: justify;
-    width: 96%;
-    padding: 2%;
+    width: 90%;
+    padding: 5%;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
 }
@@ -64,8 +65,8 @@ main {
     display: block;
     margin: 0 auto;
     text-align: justify;
-    width: 96%;
-    padding: 2%;
+    width: 90%;
+    padding: 5%;
     font-family: Arial, Helvetica, sans-serif;
     color: deepskyblue;
     border-radius: 20px;
@@ -85,4 +86,13 @@ main {
       --branco-para-o-texto-basico: cornsilk;
       --laranja-texto:rgb(240, 127, 70);
       --amarelo-brilhante:
+ }
+
+ img{
+
+    width: 100%;
+
+
+
+
  }
