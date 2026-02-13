@@ -89,7 +89,6 @@ main {
 
       --branco-para-o-texto-basico: cornsilk;
       --laranja-texto:rgb(240, 127, 70);
-      --amarelo-brilhante:
  }
 
  img{
@@ -107,3 +106,31 @@ main {
 
 
  }
+
+ .botoes {
+     
+            /* cima , direita ,baixo , esquerda */   
+    padding: 8px,20px,8px,20px;
+    display: flex;
+    justify-content: flex-end; /* joga para a direita */
+    gap: 10px;
+    background-color: cornflowerblue;
+    color: cornsilk;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: 0.4 ease;
+    
+}
+
+button:hover{
+
+     background-color: cornflowerblue;
+     color: yellow;
+
+
+
+
+
+
+}
