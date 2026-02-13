@@ -7,14 +7,15 @@ body {
 
 header {
     background: linear-gradient(to bottom, rgb(101, 1, 129), rgb(72, 1, 92), rgb(56, 0, 68));
-    color: var(--branco-para-o-texto-basico);
-    display: block;
+    color: white;
     text-align: left;
-    padding: 5%;
+    padding: 20px;
     position: fixed;
-    width: 90%;
-    
+    width: 100%;
+    top: 0;
+    left: 0;
 }
+
 
 
 h1 {
@@ -94,7 +95,7 @@ main {
 
  img{
 
-    width: 100%;
+    width: 500px;
 
 
 
