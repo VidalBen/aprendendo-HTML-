@@ -149,10 +149,10 @@ aside{
 
 }
 
-#grid-espadas{
+.grid{
 
 
-size: 20px;
+width: 2px;
 display: grid;
 grid-template-columns: auto;
 margin: auto;
