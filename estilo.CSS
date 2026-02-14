@@ -149,17 +149,10 @@ aside{
 
 }
 
-.grid{
 
-
-width: 2px;
-display: grid;
-grid-template-columns: auto;
-margin: auto;
-grid-gap: 3px;
 
     
 
 
 
-}
+
