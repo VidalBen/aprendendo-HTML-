@@ -152,7 +152,7 @@ aside{
 #grid-espadas{
 
 
-size: 300px;
+size: 20px;
 display: grid;
 grid-template-columns: auto;
 margin: auto;
