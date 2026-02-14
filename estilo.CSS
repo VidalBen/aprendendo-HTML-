@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: rgb(26, 1, 33);
+    background-color: var(--indig);
     color: var(--branco-para-o-texto-basico)
 }
 
@@ -54,7 +54,8 @@ footer {
 }
 
 div {
-    background-color: rgb(44, 1, 56);
+    background-color: var(--viodk);
+    color: cornsilk;
     display: block;
     margin: 0 auto;
     text-align: justify;
