@@ -151,6 +151,8 @@ aside{
 
 #grid-espadas{
 
+
+size: 300px;
 display: grid;
 grid-template-columns: auto;
 margin: auto;
