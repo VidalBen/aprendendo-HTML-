@@ -20,7 +20,7 @@ header {
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
-    color: rgb(220, 230, 31);
+    color: cornflowerblue
     
 }
 
@@ -119,16 +119,44 @@ main {
     font-size: 1.3em;
     font-weight: bold;
     transition: 0.4 ease;
+    background-color:rgb(101, 1, 129)
 ;
     
 }
 
 button:hover{
 
-     color: yellow;
+     color: rgb(8, 0, 255);
 
 
 
+
+
+
+}
+
+aside{
+    
+    background-color: rgb(44, 1, 56);
+    display: block;
+    margin: 0 auto;
+    text-align: justify;
+    width: 90%;
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: deepskyblue;
+    border-radius: 20px;
+
+}
+
+#grid-espadas{
+
+display: grid;
+grid-template-columns: auto;
+margin: auto;
+grid-gap: 3px;
+
+    
 
 
 
