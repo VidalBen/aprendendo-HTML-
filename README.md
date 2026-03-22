@@ -1,6 +1,6 @@
 # aprendendo-HTML-
 
-**Site publicado (GitHub Pages):** https://vidalben.github.io/aprendendo-HTML-/
+**Site publicado (GitHub Pages):** file:///Users/macbook/benjamin.TESTE/teste-index.html/chat-comunidade.html
 
 ## O que é este repositório
 
