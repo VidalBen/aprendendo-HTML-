@@ -1,185 +1,284 @@
- <!DOCTYPE html
- <html>
-    <head>   
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8"> 
+<!DOCTYPE html>
+<!--
+  Author: Fabiel Santos
+  Date: 2026-03-22
+  Time: Session (America/Sao_Paulo)
+  Project: aprendendo-HTML- (GitHub Pages) — Tuto Games / Blox Fruits hub
+  Purpose: Accessible layout, wiki-linked resources, sword guides with fixed image sizing.
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Guias, dicas e lista de espadas míticas de Blox Fruits — fan site educacional."
+    />
+    <title>Tuto Games — Blox Fruits Hub</title>
+    <link rel="shortcut icon" href="img/logoDoSite.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
+    <header class="site-header" id="topo">
+      <div class="site-header__bar">
+        <a class="brand" href="#topo" aria-label="Tuto Games — início">
+          <span class="brand__mark" aria-hidden="true">◆</span>
+          <span class="brand__text">Tuto Games</span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="mainNav" aria-label="Seções do site">
+          <a href="#sobre">Sobre</a>
+          <a href="#destaques">Destaques</a>
+          <a href="#espadas">Espadas míticas</a>
+          <a href="#links">Links úteis</a>
+        </nav>
+      </div>
+    </header>
 
-        <!-- A tag <title> muda o nome da janela no navegador   -->
-        <title>Tuto games</title>
-
-        <link rel="shortcut icon" href="img/logoDoSite.ico" type="image/x-icon">
-
-        <link rel="stylesheet" href="estilo.CSS">
-            
-            <!-- <script>
-               let nomeUsuario= prompt("poderia nos dizer qual é o seu nome? se nao feche o aviso")
-            </script>  -->
-       
-    </head>
-    <body>
-        <header>
-              
-            <!--corrigir o texto-->
-
-            <h2> tuto games</h2>
-            <h3> dicas, truques e recomendaçoes de jogos</h3>
-
-            
-            <div class="botoes">
-                <button>dicas</button>
-                <button>truques</button>
-                <button>recomendaçoes</button>
-                <button>help</button>
-            </div>
-
-
-            <!-- <h1> tuto_games</h1> -->
-          
-            
-           
-        </header>
-        <div>
-            <picture>
-                <source media="(max-width: 600px)" srcset="img/controleSemFundo.png">
-                <img src="img/imagemDeGenteJogando.png" alt="Imagem de pessoas jogando">
-            </picture>
-
-            <h1><marquee style="color: rgb(220, 230, 31);"> bem-vindo ao tuto_games! </marquee> </h1> 
-            
-
-            <br>
-            <br>
-
-
-            <!--<nav>
-                 descobrir como almentar o tamanho e fonte etc 
-            <script>
-
-              
-               document.write("ola " + nomeUsuario + " seja bem vindo(a) ao nosso site!")
-            
-            </script>
-            </nav>
-
-                                           |
-                                           |
-                                           |
-                                           v
-                                         modelo                                 -->
-             
-            <p style="font-size: 30px; color:cornflowerblue ;">Bem-vindo(a) ao nosso site</p>
-
-
-            <br>
-                
-            <p> Este site foi criado para <strong>todos que amam jogos e 
-                querem melhorar sua experiência jogando. </strong> 
-                Aqui você vai encontrar <strong> estratégias, 
-                curiosidades e recomendações para vários tipos de jogos, </strong> 
-                ajudando tanto <i>iniciantes</i> quanto jogadores mais <i>experientes</i>
-                a se divertirem e evoluírem cada vez mais.
-            </p>
-
-
-            <p>O funcionamento do site é bem fácil: os conteúdos serão
-                organizados por <strong>jogos, indo desde Roblox,
-                Super Mario Bros e Friday Night Funkin (FNF)</strong>  até muitos outros. Assim,
-                o usuário pode escolher o jogo que mais gosta e acessar 
-                dicas úteis, estratégias inteligentes e curiosidades 
-                interessantes para aproveitar cada jogo ao máximo. 🎮
-            </p>
-
-            <br> 
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media">
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/controleSemFundo.png" />
+            <img
+              class="hero__img"
+              src="img/imagemDeGenteJogando.png"
+              alt="Ilustração de pessoas jogando videogame juntas"
+              width="1200"
+              height="675"
+              loading="eager"
+            />
+          </picture>
+          <div class="hero__overlay" aria-hidden="true"></div>
         </div>
-            
-        <br> <br>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Roblox · Blox Fruits</p>
+          <h1 id="hero-title">Bem-vindo ao Tuto Games</h1>
+          <p class="hero__lead">
+            Dicas, truques e caminhos para evoluir no jogo — com foco em
+            <strong>Blox Fruits</strong>. Conteúdo de fã para fã; confira sempre a
+            <a
+              class="inline-link"
+              href="https://blox-fruits.fandom.com/wiki/Blox_Fruits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >wiki oficial no Fandom</a
+            >
+            para dados atualizados pelo comunidade.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#espadas">Ver espadas míticas</a>
+            <a class="btn btn--ghost" href="#sobre">O que é o jogo?</a>
+          </div>
+        </div>
+      </section>
 
-        <main>
+      <section class="section section--tint" id="sobre" aria-labelledby="sobre-title">
+        <div class="container">
+          <h2 id="sobre-title">O que é Blox Fruits?</h2>
+          <p class="section__lead">
+            Blox Fruits é um jogo de ação e aventura no <strong>Roblox</strong>, inspirado na série
+            One Piece: você explora ilhas, enfrenta inimigos, desbloqueia
+            <strong>frutas do diabo</strong> com poderes especiais e melhora armas e espadas. O
+            objetivo é progredir, farmar, fazer raids e PvP — cada update muda metas e itens, por
+            isso guias fixos em página precisam ser cruzados com a wiki.
+          </p>
+          <ul class="pill-list" role="list">
+            <li>Exploração em mundo aberto</li>
+            <li>PvP e raids</li>
+            <li>Frutas, espadas e estilos de luta</li>
+            <li>Economia em Beli e Robux (game passes)</li>
+          </ul>
+        </div>
+      </section>
 
-            <h1>todas as espadas miticas do blox fruit</h1>
-            
-            <style>
-                table, th, td {
-                border: 1px solid black;
-                color:black
-                
-            
-                }
-            </style>
-    <aside>
-        <table style="width:100%; background-color:gold">
- 
-             <tr>
-                <th>nome</th>
-                <th>como pegar</th>
-                <th>imagem</th>
-            </tr>
-            <tr>
-             <td>true triple katana (ttk)</td>
-             <td>achando o vendedor lendario comprar as 3 espadas e colocar ela no 300 e juntar elas falando com o npc do sea 2 e pagar 2,000,000 M para conseguir a ttk</td>
-             <td><img src="img/espada1.png" alt="erro espada nao encontrada"  width="20%"> </td>
-            </tr>
-            <tr>
-             <td>dark blade</td>
-             <td>comprando a game pass 1200 R$</td>
-             <td><img src="img/espada2.png" alt="erro espada nao encontrada"  width="20%"> </td></td>
-            </tr>
-            <tr>
-             <td>hallow scythe</td>
-             <td>matando o boss raid do castelo assombrado 5% de chance de drop</td>
-             <td><img src="img/espada3.png" alt="erro espada nao encontrada"  width="20%"> </td>
-            </tr>
-            <tr>
-             <td>triple dark blade</td>
-             <td>so vencendo competicoes de PVP ou conseguindo direto de um adm</td>
-             <td><img src="img/espada4.png" alt="erro espada nao encontrada"  width="20%"> </td>
-            </tr>
-            <tr>
-             <td>cursed dual katana (CDK)</td>
-             <td>ter yama no 350 de maestri e a tuchita no 350 ir na sla secreta atraz da mancao falar com o npc e ele vai abrir a porta da sala vc entra na sala e e completa a missao dos dois pergaminhos 6 missoens no total (<a href="https://www.w3schools.com/">como fazer a missao passo a passo detalhado</a>) quando vc terminar vc vai ter 6 fragmentos de alucarde agora abra a porta e mate o boss (ele so leva dano de espada) e ai vc tera a cdk</td>
-             <td><img src="img/espada5.png" alt="erro espada nao encontrada"  width="20%"> </td>
-            </tr>
-            
-         </table>
+      <section class="section" id="destaques" aria-labelledby="destaques-title">
+        <div class="container">
+          <h2 id="destaques-title">Destaques rápidos</h2>
+          <div class="cards cards--3">
+            <article class="card">
+              <h3 class="card__title">Dicas</h3>
+              <p class="card__body">
+                Priorize missões da sua faixa de nível, use códigos oficiais quando existirem e
+                mantenha frutas / espadas alinhadas ao seu estilo (grind x PvP).
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Truques</h3>
+              <p class="card__body">
+                Aprenda combos com a sua arma, use dash e observação de padrões de boss; em PvP,
+                espaço e timing valem mais que só dano bruto.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Recomendações</h3>
+              <p class="card__body">
+                Antes de gastar Robux, confira se o item ainda é meta no patch atual — a wiki e
+                canais confiáveis ajudam a evitar compra obsoleta.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
+      <section class="section section--tint" id="espadas" aria-labelledby="espadas-title">
+        <div class="container">
+          <h2 id="espadas-title">Espadas míticas (referência rápida)</h2>
+          <p class="section__lead">
+            Tabela resumida com base no seu guia original. Nomes e passos podem mudar com updates —
+            valide na
+            <a
+              href="https://blox-fruits.fandom.com/wiki/Swords"
+              target="_blank"
+              rel="noopener noreferrer"
+              >wiki de espadas</a
+            >.
+          </p>
 
+          <div class="sword-grid" role="list">
+            <article class="sword-card" role="listitem">
+              <div class="sword-card__visual">
+                <img src="img/espada1.png" alt="Ícone True Triple Katana" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="sword-card__body">
+                <h3 class="sword-card__name">True Triple Katana (TTK)</h3>
+                <p class="sword-card__how">
+                  Encontre o vendedor lendário, reúna as três espadas com maestria 300, fale com o
+                  NPC no Sea 2 e pague <strong>2.000.000 B</strong> para forjar a TTK.
+                </p>
+              </div>
+            </article>
 
+            <article class="sword-card" role="listitem">
+              <div class="sword-card__visual">
+                <img src="img/espada2.png" alt="Ícone Dark Blade" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="sword-card__body">
+                <h3 class="sword-card__name">Dark Blade</h3>
+                <p class="sword-card__how">
+                  Obtida via <strong>game pass</strong> (valor em Robux; confira na loja atual do
+                  jogo).
+                </p>
+              </div>
+            </article>
 
-        </aside>
+            <article class="sword-card" role="listitem">
+              <div class="sword-card__visual">
+                <img src="img/espada3.png" alt="Ícone Hallow Scythe" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="sword-card__body">
+                <h3 class="sword-card__name">Hallow Scythe</h3>
+                <p class="sword-card__how">
+                  Drop do boss de raid do <strong>Castelo Assombrado</strong> — chance baixa (~5%),
+                  exige farm de raid.
+                </p>
+              </div>
+            </article>
 
-            <br>
-            <br>
+            <article class="sword-card" role="listitem">
+              <div class="sword-card__visual">
+                <img src="img/espada4.png" alt="Ícone Triple Dark Blade" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="sword-card__body">
+                <h3 class="sword-card__name">Triple Dark Blade</h3>
+                <p class="sword-card__how">
+                  Disponível em contextos muito raros (competições PvP / eventos administrativos).
+                  Confirme no servidor oficial e na wiki.
+                </p>
+              </div>
+            </article>
 
-            <p>parte principar do  arquivo 123</p>
+            <article class="sword-card sword-card--wide" role="listitem">
+              <div class="sword-card__visual">
+                <img src="img/espada5.png" alt="Ícone Cursed Dual Katana" width="160" height="160" loading="lazy" />
+              </div>
+              <div class="sword-card__body">
+                <h3 class="sword-card__name">Cursed Dual Katana (CDK)</h3>
+                <p class="sword-card__how">
+                  Requer <strong>Yama</strong> e <strong>Tushita</strong> com maestria 350, acesso à
+                  sala secreta atrás da mansão, missões dos pergaminhos (6 etapas), fragmentos de
+                  Alucard e derrota ao boss final (dano só de espada). Guia passo a passo:
+                  <a
+                    href="https://blox-fruits.fandom.com/wiki/Cursed_Dual_Katana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >wiki CDK</a
+                  >
+                  (substitui link genérico).
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-         
-            
+      <section class="section" id="links" aria-labelledby="links-title">
+        <div class="container container--narrow">
+          <h2 id="links-title">Links úteis</h2>
+          <ul class="link-stack" role="list">
+            <li>
+              <a
+                href="https://blox-fruits.fandom.com/wiki/Blox_Fruits"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Blox Fruits — wiki principal (Fandom)</a
+              >
+            </li>
+            <li>
+              <a href="https://blox-fruits.fandom.com/wiki/Swords" target="_blank" rel="noopener noreferrer"
+                >Lista de espadas na wiki</a
+              >
+            </li>
+            <li>
+              <a href="https://blox-fruits.fandom.com/wiki/Fruits" target="_blank" rel="noopener noreferrer"
+                >Frutas na wiki</a
+              >
+            </li>
+            <li>
+              <a href="https://www.roblox.com/games/2753915549/Blox-Fruits" target="_blank" rel="noopener noreferrer"
+                >Página do jogo no Roblox</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div>
+          <p class="site-footer__brand">Tuto Games</p>
+          <p class="site-footer__note">
+            Site de fãs — não oficial. Game © seus criadores; conteúdo da comunidade na wiki Fandom.
+          </p>
+        </div>
+        <div>
+          <p class="site-footer__label">Contato (exemplo)</p>
+          <p>
+            <a href="mailto:tuto_games@gmail.com">tuto_games@gmail.com</a>
+          </p>
+          <p class="site-footer__fine">+55 5555 — placeholder</p>
+        </div>
+      </div>
+    </footer>
 
-
-
-        </main>
-
-        
-
-
-        <br>
-        <br>
-
-        <footer> 
-            
-            <p>se vc tiver duvidas mande um email para <strong><i> tuto_games@gmail.com </i></strong> ou mande uma mensagem para esse numero +55555 </p>
-            
-            <br>
-            <p>fim do site</p>
-            <p>confira esses links</p>
-
-            <p><a href="#" target="_blank">o que é blox fruit?</a></p>
-            <p><a href="#" target="_blank">espadas do blox fruit</a></p>
-            <p><a href="#" target="_blank">frutas blox fruit</a></p>
-            <p><a href="#" target="_blank"  >novo update</a></p>
-        </footer>
-
-    </body>
+    <script src="js/deck.js" defer></script>
+  </body>
 </html>
